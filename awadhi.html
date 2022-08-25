@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/css-dist/kachumber.css" />
+    <link rel="stylesheet" href="../css/css-dist/kachumber-mediaquery.css" />
+  </head>
+  <body id="body">
+    <div class="overlay" id="overlay" onclick="closeBtn()"></div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Indian Food Recipe</a>
+          <button class="btn" id="btnopen" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../html/about_us.html">ABOUT US</a></li>
+          <li><a href="../html/recipes.html" class="active">RECIPES</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-inner" id="sidebar-inner">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../html/about_us.html">ABOUT US</a></li>
+          <li><a href="../html/recipes.html" class="active">RECIPES</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="sec1" id="sec1">
+      <h1>AWADHI MUTTON BIRYANI RECIPE</h1>
+      <div class="container">
+        <h2>
+          Awadhi Mutton Biryani Recipe
+
+          <img
+            class="veglogo"
+            src="../images/non-veglogo.webp"
+            alt="non-veg logo"
+          />
+        </h2>
+        <div class="row" id="row1">
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <img
+              class="imgs"
+              src="../images/awadhi-mutton-biryani-recipe.webp"
+              alt=" Awadhi Mutton  Biryani "
+            />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4" id="timer">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                <p>
+                  <i class="fa-solid fa-clock"></i><span> Prep in:</span> 35m
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                <p>
+                  <i class="fa-solid fa-clock"></i><span> Cooks in:</span> 1h
+                  15m
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                <p>
+                  <i class="fa-solid fa-clock"></i><span> Total in:</span> 1h
+                  50m
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                <p><span> Makes:</span> 1 Serve</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Ingredients</h3>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <ul>
+              <li>1/2 cup basmati rice</li>
+              <li>2 tablespoon fried onion (birista)</li>
+              <li>1/4 teaspoon kashmiri red chilli</li>
+              <li>1/2 tablespoon yoghurt (curd)</li>
+              <li>1/4 teaspoon turmeric</li>
+              <li>1/2 black cardamom</li>
+              <li>3/4 bay leaf</li>
+              <li>2 tablespoon milk</li>
+              <li>1/4 teaspoon rose water</li>
+              <li>salt As required</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <ul>
+              <li>1/2 cup and 2 tablespoon mutton</li>
+              <li>1/4 tablespoon ginger paste</li>
+              <li>1/4 teaspoon garlic paste</li>
+              <li>1/4 teaspoon cumin powder</li>
+              <li>1/4 teaspoon biryani masala powder</li>
+              <li>1/4 teaspoon sugar</li>
+              <li>saffron as required</li>
+              <li>3/4 tablespoon ghee</li>
+              <li>nutmeg powder as required</li>
+              <li>1/4 large onion</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>How to make Awadhi Mutton Biryani</h3>
+        <div class="disc">
+          <p class="sub-header">Step 1 Make caramelized onions</p>
+          <p>
+            Heat ghee in a pan, and add onions. Then add salt followed by sugar.
+            Let the onions cook and get caramelized, stir occasionally. Once
+            done, keep them aside. Meanwhile, soak saffron in milk.
+          </p>
+          <p class="sub-header">Step 2 Cook the mutton pieces</p>
+          <p>
+            In a cooker, heat ghee and then add deep-fried onions followed by
+            mutton pieces into it. Cook it till the raw smell of the mutton
+            disappears. Take a bowl and add yogurt, ginger paste garlic paste,
+            turmeric powder, red chili powder, cumin powder, and biryani masala.
+            Mix everything well and then add this to the mutton pieces. Now, add
+            2 cups of water and pressure cook the mutton to two whistles on low
+            flame. It should be 3/4 cooked.
+          </p>
+          <p class="sub-header">Step 3 Prepare rice</p>
+          <p>
+            To prepare the rice, bring eight cups of salted water to a boil and
+            then add black cardamom, soaked rice, and one bay leaf to the
+            cooker. Cook it for one whistle. The rice should be half cooked.
+          </p>
+          <p class="sub-header">Step 4 Layer up the biryani</p>
+          <p>
+            In a handi, add bay leaves to the bottom followed by half of the
+            rice. Top it with some soaked saffron in milk and then add mutton
+            pieces. Again add the remaining rice. Sprinkle nutmeg powder and
+            then add half of the caramelized onions. Sprinkle rose water on the
+            top and then cover the lid. Cook it for at least 30 mins on low
+            flame and keep an eye on the biryani.
+          </p>
+          <p class="sub-header">Step 5 Your Awadhi Mutton Biryani is ready</p>
+          <p>
+            Garnish your biryani with the rest caramelized onions. Your Awadhi
+            Mutton Biryani is ready to serve. Enjoy the meal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/receipe.js"></script>
+  </body>
+</html>

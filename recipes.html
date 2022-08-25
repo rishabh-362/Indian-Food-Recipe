@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/css-dist/recipes.css" />
+    <link rel="stylesheet" href="../css/css-dist/recipe-mediaquery.css" />
+  </head>
+  <body id="body">
+    <div class="overlay" id="overlay" onclick="closeBtn()"></div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Indian Food Recipe</a>
+          <button class="btn" id="btnopen" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../html/about_us.html">ABOUT US</a></li>
+          <li><a href="#" class="active">RECIPES</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-inner" id="sidebar-inner">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../html/about_us.html">ABOUT US</a></li>
+          <li><a href="#" class="active">RECIPES</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="sec1" id="sec1">
+      <div class="container">
+        <h1>RECIPES</h1>
+        <div class="wrapper">
+          <nav>
+            <div class="items">
+              <span class="item active" data-name="all">ALL</span>
+              <span class="item" data-name="VEG"
+                >VEG
+                <img
+                  class="veglogo"
+                  src="../images/veglogo.webp"
+                  alt="Veg logo"
+                />
+              </span>
+              <span class="item" data-name="NON-VEG"
+                >NON VEG
+                <img
+                  class="veglogo"
+                  src="../images/non-veglogo.webp"
+                  alt="Veg logo"
+              /></span>
+            </div>
+          </nav>
+
+          <div class="gallery">
+            <div class="image" data-name="VEG">
+              <span><img src="../images/rajma.webp" alt="Rajma" /></span>
+              <div class="img_overlay">
+                <p>RAJMA</p>
+                <a href="../html/rajma.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span
+                ><img src="../images/kachumber-salad.webp" alt="Rajma"
+              /></span>
+              <div class="img_overlay">
+                <p>KACHUMBER SALAD</p>
+                <a href="../html/kachumber.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span><img src="../images/paneer.webp" alt="Paneer" /></span>
+              <div class="img_overlay">
+                <p>PANEER</p>
+                <a href="../html/paneer.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span
+                ><img src="../images/gujarati_thali.webp" alt="Gujarati Thali"
+              /></span>
+              <div class="img_overlay">
+                <p>GUJARATI</p>
+                <a href="../html/gujarati.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="image" data-name="VEG">
+              <span><img src="../images/biryani.webp" alt="Biryani" /></span>
+              <div class="img_overlay">
+                <p>BIRYANI</p>
+                <a href="../html/biryani.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span><img src="../images/chole2.webp" alt="Chole" /></span>
+              <div class="img_overlay">
+                <p>CHOLE</p>
+                <a href="../html/chole.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span><img src="../images/pavbhaji2.webp" alt="Pavbhaji" /></span>
+              <div class="img_overlay">
+                <p>PAV BHAJI</p>
+                <a href="../html/pavbhaji.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span
+                ><img src="../images/South_indian.webp" alt="South Indian"
+              /></span>
+              <div class="img_overlay">
+                <p>SOUTH INDIAN</p>
+                <a href="../html/southindian.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span><img src="../images/dalbati.webp" alt="Dalbati" /></span>
+              <div class="img_overlay">
+                <p>BAATI</p>
+                <a href="../html/Dalbati.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="image" data-name="VEG">
+              <span><img src="../images/vadapav.webp" alt="Vadapav" /></span>
+              <div class="img_overlay">
+                <p>VADAPAV</p>
+                <a href="../html/vadapav.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span><img src="../images/dabeli.webp" alt="Dabeli" /></span>
+              <div class="img_overlay">
+                <p>DABELI</p>
+                <a href="../html/dabeli.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="VEG">
+              <span
+                ><img src="../images/fried_snack.webp" alt="Fried Snacks"
+              /></span>
+              <div class="img_overlay">
+                <p>FRIED SNACK</p>
+                <a href="../html/friedsnacks.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <!-- NON-VEG -->
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/kozhikode_biryani.webp" alt="Rajma"
+              /></span>
+              <div class="img_overlay">
+                <p>KOZHIKODE BIRYANI</p>
+                <a href="../html/kozikode.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/Kerala_Chicken.webp" alt="Paneer"
+              /></span>
+              <div class="img_overlay">
+                <p>KERELA ROSTED CHICKEN</p>
+                <a href="../html/rosted_chicken.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/pardewali.webp" alt="Gujarati Thali"
+              /></span>
+              <div class="img_overlay">
+                <p>PADEWAALI MURGH HAWAH MAHAL</p>
+                <a href="../html/pardewaali.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/bangali-kosha-Mangsho.webp" alt="Biryani"
+              /></span>
+              <div class="img_overlay">
+                <p>BANGALI KOSHA MANGSHO</p>
+                <a href="../html/kosha.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span><img src="../images/Mutton_Chaap.webp" alt="Chole" /></span>
+              <div class="img_overlay">
+                <p>MUTTON CHAAP</p>
+                <a href="../html/mutton-chap.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img
+                  src="../images/lemon-pepper-fish-recipe.webp"
+                  alt="Pavbhaji"
+              /></span>
+              <div class="img_overlay">
+                <p>LEMON PEPPER FISH</p>
+                <a href="../html/lemon_fish.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/andhra-fish-fry.webp" alt="South Indian"
+              /></span>
+              <div class="img_overlay">
+                <p>ANDRA FISH FRY</p>
+                <a href="../html/andra_fish.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/lamb-rogan-josh.webp" alt="Dalbati"
+              /></span>
+              <div class="img_overlay">
+                <p>LAMB ROGAN JOSH</p>
+                <a href="../html/rogan_josh.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/chicken_shawarma.webp" alt="Vadapav"
+              /></span>
+              <div class="img_overlay">
+                <p>CHICKEN SHAWARMA</p>
+                <a href="../html/shawarma.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img src="../images/ShrimpPakoras.webp" alt="Dabeli"
+              /></span>
+              <div class="img_overlay">
+                <p>SHRIMP PAKORA</p>
+                <a href="../html/shrimp_pakora.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="image" data-name="NON-VEG">
+              <span
+                ><img
+                  src="../images/awadhi-mutton-biryani-recipe.webp"
+                  alt="Fried Snacks"
+              /></span>
+              <div class="img_overlay">
+                <p>AWADHI MUTTON BIRYANI</p>
+                <a href="../html/awadhi.html">
+                  <button class="btn">
+                    See Recipe <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="preview-box">
+          <div class="details">
+            <span class="title"
+              >Food Category:
+              <p></p>
+            </span>
+            <span class="icon fas fa-times"></span>
+          </div>
+          <div class="image-box"><img src="" alt="" /></div>
+        </div>
+        <div class="shadow"></div> -->
+      </div>
+    </section>
+    <script src="../js/receipe.js"></script>
+  </body>
+</html>
